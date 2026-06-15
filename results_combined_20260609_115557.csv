@@ -1,0 +1,2 @@
+handshake_time_s,ttfb_s,cpu_peak_pct,cpu_mean_pct,ram_peak_bytes,ttlb_s,scenario,network,is_warmup,iteration,timestamp
+,,95.4,15.9,9515008,0.022632598876953125,A,ideal,False,data-001,2026-06-09T11:56:04.177556+00:00
