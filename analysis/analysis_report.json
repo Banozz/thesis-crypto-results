@@ -1,0 +1,825 @@
+{
+  "source_file": "/measurement/results/results_combined_latest.csv",
+  "total_rows": 600,
+  "metrics": {
+    "ideal": {
+      "handshake_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 4.682064056396484,
+          "mean": 5.72498083114624,
+          "std": 6.925389173259726,
+          "p05": 3.066861629486084,
+          "p95": 8.59328508377075,
+          "min": 2.772808074951172,
+          "max": 72.2663402557373
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 6.34920597076416,
+          "mean": 7.19555139541626,
+          "std": 2.972955564345484,
+          "p05": 3.50872278213501,
+          "p95": 12.856709957122805,
+          "min": 2.979278564453125,
+          "max": 13.671875
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 4.954695701599121,
+          "mean": 5.798559188842773,
+          "std": 5.10652237440612,
+          "p05": 3.4758448600769043,
+          "p95": 7.741522789001463,
+          "min": 3.315448760986328,
+          "max": 54.53801155090332
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 2872.5,
+          "p_value": 2.024322490458878e-07,
+          "significant": true,
+          "effect_size_r": 0.4255,
+          "median_a": 4.682064056396484,
+          "median_b": 6.34920597076416,
+          "overhead_pct": 35.606986454832466,
+          "interpretation": "Overhead +35.6% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4194.0,
+          "p_value": 0.04905047061800188,
+          "significant": true,
+          "effect_size_r": 0.1612,
+          "median_a": 4.682064056396484,
+          "median_b": 4.954695701599121,
+          "overhead_pct": 5.822894388430594,
+          "interpretation": "Overhead +5.8% \u2014 signifikan (p=0.0491)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 6718.0,
+          "p_value": 2.7104515936748165e-05,
+          "significant": true,
+          "effect_size_r": -0.3435999999999999,
+          "median_a": 6.34920597076416,
+          "median_b": 4.954695701599121,
+          "overhead_pct": -21.96353804847825,
+          "interpretation": "Overhead -22.0% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "ttfb_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 7.115483283996582,
+          "mean": 8.214664459228516,
+          "std": 7.081848392098091,
+          "p05": 5.47327995300293,
+          "p95": 11.347651481628416,
+          "min": 4.640102386474609,
+          "max": 75.97494125366211
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 8.272767066955566,
+          "mean": 9.077496528625488,
+          "std": 3.161295560464282,
+          "p05": 5.0852179527282715,
+          "p95": 15.161454677581789,
+          "min": 4.6138763427734375,
+          "max": 17.199993133544922
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 7.930874824523926,
+          "mean": 8.442165851593018,
+          "std": 5.269716609611013,
+          "p05": 5.702531337738037,
+          "p95": 11.13349199295044,
+          "min": 5.382299423217773,
+          "max": 58.051347732543945
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 3805.0,
+          "p_value": 0.0035157423889892567,
+          "significant": true,
+          "effect_size_r": 0.239,
+          "median_a": 7.115483283996582,
+          "median_b": 8.272767066955566,
+          "overhead_pct": 16.26430330546667,
+          "interpretation": "Overhead +16.3% \u2014 signifikan (p=0.0035)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4141.0,
+          "p_value": 0.03593599229651258,
+          "significant": true,
+          "effect_size_r": 0.17179999999999995,
+          "median_a": 7.115483283996582,
+          "median_b": 7.930874824523926,
+          "overhead_pct": 11.459397879006183,
+          "interpretation": "Overhead +11.5% \u2014 signifikan (p=0.0359)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 5736.0,
+          "p_value": 0.07231765050450598,
+          "significant": false,
+          "effect_size_r": -0.1472,
+          "median_a": 8.272767066955566,
+          "median_b": 7.930874824523926,
+          "overhead_pct": -4.132743490352609,
+          "interpretation": "Overhead -4.1% \u2014 TIDAK signifikan (p=0.0723)"
+        }
+      },
+      "ttlb_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 9.007096290588379,
+          "mean": 10.1934814453125,
+          "std": 7.315637438010828,
+          "p05": 7.109510898590088,
+          "p95": 13.52020502090454,
+          "min": 6.47425651550293,
+          "max": 79.84209060668945
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 10.022878646850586,
+          "mean": 10.885248184204102,
+          "std": 3.2550166752493794,
+          "p05": 6.795287132263184,
+          "p95": 16.93669557571411,
+          "min": 6.159543991088867,
+          "max": 19.09399032592773
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 9.924173355102539,
+          "mean": 10.61119794845581,
+          "std": 5.6714154327508055,
+          "p05": 7.5148820877075195,
+          "p95": 13.63980770111084,
+          "min": 7.063627243041992,
+          "max": 63.44771385192871
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 3965.0,
+          "p_value": 0.011481705244575428,
+          "significant": true,
+          "effect_size_r": 0.20699999999999996,
+          "median_a": 9.007096290588379,
+          "median_b": 10.022878646850586,
+          "overhead_pct": 11.277578516881295,
+          "interpretation": "Overhead +11.3% \u2014 signifikan (p=0.0115)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4014.0,
+          "p_value": 0.016041909926260672,
+          "significant": true,
+          "effect_size_r": 0.19720000000000004,
+          "median_a": 9.007096290588379,
+          "median_b": 9.924173355102539,
+          "overhead_pct": 10.18171711423164,
+          "interpretation": "Overhead +10.2% \u2014 signifikan (p=0.0160)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 5411.0,
+          "p_value": 0.3158553057488417,
+          "significant": false,
+          "effect_size_r": -0.08220000000000005,
+          "median_a": 10.022878646850586,
+          "median_b": 9.924173355102539,
+          "overhead_pct": -0.9847998287304646,
+          "interpretation": "Overhead -1.0% \u2014 TIDAK signifikan (p=0.3159)"
+        }
+      },
+      "cpu_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 12.963500000002348,
+          "mean": 12.990999999999794,
+          "std": 0.20229591286918247,
+          "p05": 12.722550000000377,
+          "p95": 13.231599999997634,
+          "min": 12.546000000003945,
+          "max": 14.031999999996714
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 12.989499999996212,
+          "mean": 12.941370000002197,
+          "std": 0.31007287038571996,
+          "p05": 12.520750000007297,
+          "p95": 13.42664999999883,
+          "min": 12.378000000012436,
+          "max": 13.756000000000768
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 13.443500000022368,
+          "mean": 13.52266000000185,
+          "std": 0.29539883055499394,
+          "p05": 13.118550000069717,
+          "p95": 14.080050000035271,
+          "min": 13.030999999983806,
+          "max": 14.276999999992768
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 5338.5,
+          "p_value": 0.4088797221722411,
+          "significant": false,
+          "effect_size_r": -0.0677000000000001,
+          "median_a": 12.963500000002348,
+          "median_b": 12.989499999996212,
+          "overhead_pct": 0.2005631194805381,
+          "interpretation": "Overhead +0.2% \u2014 TIDAK signifikan (p=0.4089)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 446.0,
+          "p_value": 9.3756905061087e-29,
+          "significant": true,
+          "effect_size_r": 0.9108,
+          "median_a": 12.963500000002348,
+          "median_b": 13.443500000022368,
+          "overhead_pct": 3.7027037452843214,
+          "interpretation": "Overhead +3.7% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 760.0,
+          "p_value": 3.8186960046348015e-25,
+          "significant": true,
+          "effect_size_r": 0.848,
+          "median_a": 12.989499999996212,
+          "median_b": 13.443500000022368,
+          "overhead_pct": 3.495130682676686,
+          "interpretation": "Overhead +3.5% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "cpu_pct": {
+        "scenario_A": {
+          "n": 100,
+          "median": 52.0,
+          "mean": 50.85,
+          "std": 6.981034915028608,
+          "p05": 39.9,
+          "p95": 61.0,
+          "min": 11.0,
+          "max": 64.0
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 47.0,
+          "mean": 47.27,
+          "std": 8.07522085884912,
+          "p05": 35.0,
+          "p95": 58.14999999999999,
+          "min": 32.0,
+          "max": 64.0
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 50.0,
+          "mean": 49.98,
+          "std": 5.910066741491917,
+          "p05": 43.0,
+          "p95": 57.0,
+          "min": 16.0,
+          "max": 61.0
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 6297.5,
+          "p_value": 0.0014355114224853696,
+          "significant": true,
+          "effect_size_r": -0.25950000000000006,
+          "median_a": 52.0,
+          "median_b": 47.0,
+          "overhead_pct": -9.615384615384617,
+          "interpretation": "Overhead -9.6% \u2014 signifikan (p=0.0014)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 5615.5,
+          "p_value": 0.12916666733595514,
+          "significant": false,
+          "effect_size_r": -0.12309999999999999,
+          "median_a": 52.0,
+          "median_b": 50.0,
+          "overhead_pct": -3.8461538461538463,
+          "interpretation": "Overhead -3.8% \u2014 TIDAK signifikan (p=0.1292)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 3958.0,
+          "p_value": 0.010497106787594902,
+          "significant": true,
+          "effect_size_r": 0.20840000000000003,
+          "median_a": 47.0,
+          "median_b": 50.0,
+          "overhead_pct": 6.382978723404255,
+          "interpretation": "Overhead +6.4% \u2014 signifikan (p=0.0105)"
+        }
+      },
+      "max_rss_kb": {
+        "scenario_A": {
+          "n": 100,
+          "median": 9400.0,
+          "mean": 9415.8,
+          "std": 87.26113138451191,
+          "p05": 9292.0,
+          "p95": 9576.0,
+          "min": 9272.0,
+          "max": 9668.0
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 9282.0,
+          "mean": 9296.84,
+          "std": 69.90277808383858,
+          "p05": 9195.6,
+          "p95": 9448.0,
+          "min": 9116.0,
+          "max": 9472.0
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 9596.0,
+          "mean": 9605.56,
+          "std": 94.93499317581968,
+          "p05": 9460.0,
+          "p95": 9764.0,
+          "min": 9456.0,
+          "max": 9840.0
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 8661.0,
+          "p_value": 3.6821225996786573e-19,
+          "significant": true,
+          "effect_size_r": -0.7322,
+          "median_a": 9400.0,
+          "median_b": 9282.0,
+          "overhead_pct": -1.2553191489361701,
+          "interpretation": "Overhead -1.3% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 718.5,
+          "p_value": 1.2898403019780117e-25,
+          "significant": true,
+          "effect_size_r": 0.8563000000000001,
+          "median_a": 9400.0,
+          "median_b": 9596.0,
+          "overhead_pct": 2.0851063829787235,
+          "interpretation": "Overhead +2.1% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 11.0,
+          "p_value": 3.458174097387057e-34,
+          "significant": true,
+          "effect_size_r": 0.9978,
+          "median_a": 9282.0,
+          "median_b": 9596.0,
+          "overhead_pct": 3.382891618185736,
+          "interpretation": "Overhead +3.4% \u2014 signifikan (p=0.0000)"
+        }
+      }
+    },
+    "edge": {
+      "handshake_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 109.59863662719727,
+          "mean": 109.38580751419067,
+          "std": 14.060581193594144,
+          "p05": 104.90940809249877,
+          "p95": 115.0262713432312,
+          "min": 6.510734558105469,
+          "max": 198.59886169433597
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 107.29432106018066,
+          "mean": 107.27400779724121,
+          "std": 10.980479774325415,
+          "p05": 105.1026701927185,
+          "p95": 114.26172256469728,
+          "min": 2.590417861938477,
+          "max": 115.2667999267578
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 110.34810543060303,
+          "mean": 112.660653591156,
+          "std": 33.50631542273836,
+          "p05": 105.17774820327759,
+          "p95": 115.7536506652832,
+          "min": 2.323627471923828,
+          "max": 422.6396083831787
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 6030.0,
+          "p_value": 0.011887417835916465,
+          "significant": true,
+          "effect_size_r": -0.20599999999999996,
+          "median_a": 109.59863662719727,
+          "median_b": 107.29432106018066,
+          "overhead_pct": -2.102503861297831,
+          "interpretation": "Overhead -2.1% \u2014 signifikan (p=0.0119)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4353.5,
+          "p_value": 0.1144669006419778,
+          "significant": false,
+          "effect_size_r": 0.12929999999999997,
+          "median_a": 109.59863662719727,
+          "median_b": 110.34810543060303,
+          "overhead_pct": 0.6838304074484979,
+          "interpretation": "Overhead +0.7% \u2014 TIDAK signifikan (p=0.1145)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 3279.0,
+          "p_value": 2.6241219978746537e-05,
+          "significant": true,
+          "effect_size_r": 0.34419999999999995,
+          "median_a": 107.29432106018066,
+          "median_b": 110.34810543060303,
+          "overhead_pct": 2.846175212488195,
+          "interpretation": "Overhead +2.8% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "ttfb_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 215.15274047851562,
+          "mean": 217.14651584625244,
+          "std": 23.47963988841234,
+          "p05": 208.90659093856814,
+          "p95": 221.40735387802124,
+          "min": 112.5640869140625,
+          "max": 348.6974239349365
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 212.13090419769287,
+          "mean": 213.47302675247192,
+          "std": 17.898515350046555,
+          "p05": 208.05567502975467,
+          "p95": 219.9675440788269,
+          "min": 106.0490608215332,
+          "max": 339.45322036743164
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 215.60966968536377,
+          "mean": 219.13754224777222,
+          "std": 35.82737246756267,
+          "p05": 209.5286726951599,
+          "p95": 222.01092243194577,
+          "min": 107.16104507446288,
+          "max": 526.8151760101318
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 6421.0,
+          "p_value": 0.0005188448055070472,
+          "significant": true,
+          "effect_size_r": -0.2842,
+          "median_a": 215.15274047851562,
+          "median_b": 212.13090419769287,
+          "overhead_pct": -1.4045074555415684,
+          "interpretation": "Overhead -1.4% \u2014 signifikan (p=0.0005)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4508.0,
+          "p_value": 0.2297800480846246,
+          "significant": false,
+          "effect_size_r": 0.09840000000000004,
+          "median_a": 215.15274047851562,
+          "median_b": 215.60966968536377,
+          "overhead_pct": 0.21237433733444444,
+          "interpretation": "Overhead +0.2% \u2014 TIDAK signifikan (p=0.2298)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 3006.0,
+          "p_value": 1.1109344927254952e-06,
+          "significant": true,
+          "effect_size_r": 0.39880000000000004,
+          "median_a": 212.13090419769287,
+          "median_b": 215.60966968536377,
+          "overhead_pct": 1.639914514496626,
+          "interpretation": "Overhead +1.6% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "ttlb_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 217.992901802063,
+          "mean": 221.41053438186646,
+          "std": 31.45755683954476,
+          "p05": 210.8504056930542,
+          "p95": 224.8483061790466,
+          "min": 116.77360534667967,
+          "max": 445.91760635375977
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 214.98417854309082,
+          "mean": 216.0560441017151,
+          "std": 18.099993214581016,
+          "p05": 209.9578499794006,
+          "p95": 223.60793352127075,
+          "min": 107.69224166870116,
+          "max": 341.339111328125
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 218.38867664337158,
+          "mean": 230.50708055496216,
+          "std": 68.03193748732795,
+          "p05": 211.421000957489,
+          "p95": 230.0728082656859,
+          "min": 109.22765731811523,
+          "max": 635.3123188018799
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 6475.5,
+          "p_value": 0.0003133571029652749,
+          "significant": true,
+          "effect_size_r": -0.2950999999999999,
+          "median_a": 217.992901802063,
+          "median_b": 214.98417854309082,
+          "overhead_pct": -1.3801932237702315,
+          "interpretation": "Overhead -1.4% \u2014 signifikan (p=0.0003)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 4492.0,
+          "p_value": 0.21496804845074768,
+          "significant": false,
+          "effect_size_r": 0.10160000000000002,
+          "median_a": 217.992901802063,
+          "median_b": 218.38867664337158,
+          "overhead_pct": 0.18155400383997655,
+          "interpretation": "Overhead +0.2% \u2014 TIDAK signifikan (p=0.2150)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 3008.0,
+          "p_value": 1.1387435219270964e-06,
+          "significant": true,
+          "effect_size_r": 0.3984,
+          "median_a": 214.98417854309082,
+          "median_b": 218.38867664337158,
+          "overhead_pct": 1.5836040230273847,
+          "interpretation": "Overhead +1.6% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "cpu_ms": {
+        "scenario_A": {
+          "n": 100,
+          "median": 13.761000000002355,
+          "mean": 13.774150000002336,
+          "std": 0.17031280638854795,
+          "p05": 13.531800000011884,
+          "p95": 14.011099999996903,
+          "min": 13.205000000013456,
+          "max": 14.18999999999926
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 13.620500000001812,
+          "mean": 13.606859999995606,
+          "std": 0.22784098743488645,
+          "p05": 13.155499999949427,
+          "p95": 13.899299999982873,
+          "min": 12.94600000002788,
+          "max": 13.971999999995433
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 14.166500000001747,
+          "mean": 14.10854000000171,
+          "std": 0.2921981968845642,
+          "p05": 13.679949999965402,
+          "p95": 14.547099999992952,
+          "min": 13.654999999999973,
+          "max": 14.6389999999883
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 7232.5,
+          "p_value": 4.934283962029906e-08,
+          "significant": true,
+          "effect_size_r": -0.4464999999999999,
+          "median_a": 13.761000000002355,
+          "median_b": 13.620500000001812,
+          "overhead_pct": -1.021001380717382,
+          "interpretation": "Overhead -1.0% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 1891.5,
+          "p_value": 3.1001820859455305e-14,
+          "significant": true,
+          "effect_size_r": 0.6216999999999999,
+          "median_a": 13.761000000002355,
+          "median_b": 14.166500000001747,
+          "overhead_pct": 2.9467335222681714,
+          "interpretation": "Overhead +2.9% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 911.5,
+          "p_value": 1.7096006453979097e-23,
+          "significant": true,
+          "effect_size_r": 0.8177,
+          "median_a": 13.620500000001812,
+          "median_b": 14.166500000001747,
+          "overhead_pct": 4.008663411768017,
+          "interpretation": "Overhead +4.0% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "cpu_pct": {
+        "scenario_A": {
+          "n": 100,
+          "median": 2.0,
+          "mean": 1.67,
+          "std": 0.5135536717202728,
+          "p05": 1.0,
+          "p95": 2.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 2.0,
+          "mean": 1.56,
+          "std": 0.5378595813899101,
+          "p05": 1.0,
+          "p95": 2.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 2.0,
+          "mean": 1.91,
+          "std": 0.32082595426382343,
+          "p05": 1.0,
+          "p95": 2.0,
+          "min": 0.0,
+          "max": 2.0
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 5539.0,
+          "p_value": 0.11655604525366679,
+          "significant": false,
+          "effect_size_r": -0.1077999999999999,
+          "median_a": 2.0,
+          "median_b": 2.0,
+          "overhead_pct": 0.0,
+          "interpretation": "Overhead +0.0% \u2014 TIDAK signifikan (p=0.1166)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 3857.5,
+          "p_value": 4.9221726517555075e-05,
+          "significant": true,
+          "effect_size_r": 0.22850000000000004,
+          "median_a": 2.0,
+          "median_b": 2.0,
+          "overhead_pct": 0.0,
+          "interpretation": "Overhead +0.0% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 3313.0,
+          "p_value": 4.2189640936757864e-08,
+          "significant": true,
+          "effect_size_r": 0.33740000000000003,
+          "median_a": 2.0,
+          "median_b": 2.0,
+          "overhead_pct": 0.0,
+          "interpretation": "Overhead +0.0% \u2014 signifikan (p=0.0000)"
+        }
+      },
+      "max_rss_kb": {
+        "scenario_A": {
+          "n": 100,
+          "median": 9390.0,
+          "mean": 9398.48,
+          "std": 87.2952125916086,
+          "p05": 9272.0,
+          "p95": 9548.0,
+          "min": 9232.0,
+          "max": 9664.0
+        },
+        "scenario_B": {
+          "n": 100,
+          "median": 9304.0,
+          "mean": 9298.52,
+          "std": 76.59344065594097,
+          "p05": 9188.0,
+          "p95": 9448.0,
+          "min": 9132.0,
+          "max": 9460.0
+        },
+        "scenario_C": {
+          "n": 100,
+          "median": 9636.0,
+          "mean": 9626.08,
+          "std": 97.68964255552511,
+          "p05": 9456.0,
+          "p95": 9765.2,
+          "min": 9332.0,
+          "max": 9844.0
+        },
+        "wilcoxon_A_vs_B": {
+          "u_stat": 7976.5,
+          "p_value": 3.5131067945420637e-13,
+          "significant": true,
+          "effect_size_r": -0.5952999999999999,
+          "median_a": 9390.0,
+          "median_b": 9304.0,
+          "overhead_pct": -0.9158679446219382,
+          "interpretation": "Overhead -0.9% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_A_vs_C": {
+          "u_stat": 458.0,
+          "p_value": 1.283433490404068e-28,
+          "significant": true,
+          "effect_size_r": 0.9084,
+          "median_a": 9390.0,
+          "median_b": 9636.0,
+          "overhead_pct": 2.619808306709265,
+          "interpretation": "Overhead +2.6% \u2014 signifikan (p=0.0000)"
+        },
+        "wilcoxon_B_vs_C": {
+          "u_stat": 54.0,
+          "p_value": 1.2641577049827254e-33,
+          "significant": true,
+          "effect_size_r": 0.9892,
+          "median_a": 9304.0,
+          "median_b": 9636.0,
+          "overhead_pct": 3.568357695614789,
+          "interpretation": "Overhead +3.6% \u2014 signifikan (p=0.0000)"
+        }
+      }
+    }
+  },
+  "correlation": {
+    "ideal": {
+      "scenario_A": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.9969649982411641,
+        "pearson_hs_ttfb_p": 1.7801367108322573e-110,
+        "isolasi_terkonfirmasi": true,
+        "pearson_procleg_cpu_r": -0.5083830987695852,
+        "pearson_procleg_cpu_p": 6.669987302926084e-08
+      },
+      "scenario_B": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.9933197483175933,
+        "pearson_hs_ttfb_p": 1.0050586820720429e-93,
+        "isolasi_terkonfirmasi": true,
+        "pearson_procleg_cpu_r": -0.35497911470772475,
+        "pearson_procleg_cpu_p": 0.0002901605569510138
+      },
+      "scenario_C": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.9901217443672353,
+        "pearson_hs_ttfb_p": 1.9673375525750063e-85,
+        "isolasi_terkonfirmasi": true,
+        "pearson_procleg_cpu_r": -0.5104410794457488,
+        "pearson_procleg_cpu_p": 5.784081001607107e-08
+      }
+    },
+    "edge": {
+      "scenario_A": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.610218525981034,
+        "pearson_hs_ttfb_p": 1.5859439604339913e-11,
+        "isolasi_terkonfirmasi": false,
+        "pearson_procleg_cpu_r": -0.1807240383481704,
+        "pearson_procleg_cpu_p": 0.07196078735562272
+      },
+      "scenario_B": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.6177938629497118,
+        "pearson_hs_ttfb_p": 7.54084207246009e-12,
+        "isolasi_terkonfirmasi": false,
+        "pearson_procleg_cpu_r": -0.14712576287204612,
+        "pearson_procleg_cpu_p": 0.144091739035719
+      },
+      "scenario_C": {
+        "n": 100,
+        "pearson_hs_ttfb_r": 0.928897198031258,
+        "pearson_hs_ttfb_p": 4.562027814680889e-44,
+        "isolasi_terkonfirmasi": false,
+        "pearson_procleg_cpu_r": -0.30129076693818685,
+        "pearson_procleg_cpu_p": 0.0023179816985864805
+      }
+    }
+  },
+  "feasibility": {
+    "handshake_available": true,
+    "handshake_overhead_pct": 5.822894388430594,
+    "ttlb_overhead_pct": 10.18171711423164,
+    "cpu_p95_pct": 57.0,
+    "cpu_max_pct": 61.0,
+    "cpu_ms_median_A_ideal": 12.963500000002348,
+    "cpu_ms_median_C_ideal": 13.443500000022368,
+    "cpu_ms_overhead_pct_ideal": 3.7027037452843214,
+    "cpu_note": "Metrik CPU primer = cpu_ms (waktu CPU absolut via getrusage, invarian thd jaringan). cpu_pct (utilisasi %) hanya valid pada kondisi ideal; P95-nya dipakai sebagai proksi peak utk kriteria 3.5.",
+    "threshold_latency_pct": 30.0,
+    "threshold_cpu_pct": 80.0,
+    "criterion_handshake_passed": true,
+    "criterion_ttlb_passed": true,
+    "criterion_cpu_passed": true,
+    "overall_feasible": true
+  }
+}
